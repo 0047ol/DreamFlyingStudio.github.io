@@ -7,16 +7,16 @@
 <link rel="stylesheet" href="/css/mdui.min.css"/>
 </head>
 <body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
-<div class="mdui-dialog">
-  <div class="mdui-dialog-title">Are you sure?</div>
-  <div class="mdui-dialog-content">You'll lose all photos and media!</div>
-  <div class="mdui-dialog-actions">
-    <button class="mdui-btn mdui-ripple">cancel</button>
-    <button class="mdui-btn mdui-ripple">erase</button>
+<div class="mdui-dialog" id="dialog">
+    <div class="mdui-dialog-title">Are you sure?</div>
+    <div class="mdui-dialog-content">You'll lose all photos and media!</div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple" mdui-dialog-cancel>cancel</button>
+      <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>erase</button>
+    </div>
   </div>
-</div>
 <script src="/js/mdui.min.js">
-  var inst = new mdui.Dialog(selector, options);
+  dialog.open();
 </script>
 </body>
 </html>
