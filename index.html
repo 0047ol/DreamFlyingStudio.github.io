@@ -1,114 +1,172 @@
-<html><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>DOFS</title>
-  <link href="/css/mdui.min.css" rel="stylesheet">
-</head>
-<body class="mdui-appbar-with-toolbar mdui-appbar-with-tab mdui-drawer-body-lef">
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>KPA教程</title>
+	<link href="/css/mdui.min.css" rel="stylesheet">
+  </head>
+  <body class="mdui-appbar-with-toolbar mdui-appbar-with-tab mdui-drawer-body-lef mdui-theme-accent-blue">
 
-<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
-   <div class="mdui-toolbar mdui-color-light-blue-a700 ">
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer' , swipe: true}"><i class="mdui-icon material-icons">menu</i></a>
-    <a href="javascript:;" class="mdui-typo-title">KPA助手</a>
-    <div class="mdui-toolbar-spacer"></div>
-    <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '更多'}" mdui-menu="{target: '#example-1'}"><i class="mdui-icon material-icons">more_vert</i></a>
-    
-    <ul class="mdui-menu" id="example-1">
-    <li class="mdui-menu-item">
-      <a href="javascript:;" class="mdui-ripple" id="open">设置</a>
-    </li>
-    <li class="mdui-divider"></li>
-    <li class="mdui-menu-item">
-      <a href="javascript:;" class="mdui-ripple">账户</a>
-    </li>
-  </ul>
+	<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
+	  <div class="mdui-toolbar mdui-color-light-blue-a700 ">
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer',swipe: true}" mdui-tooltip="{content: '菜单', position: 'auto'}" id="menu"><i class="mdui-icon material-icons">menu</i></a>
+		<a href="javascript:;" class="mdui-typo-title">使用帮助</a>
+		<div class="mdui-toolbar-spacer"></div>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '搜索', position: 'auto'}" id="search"><i class="mdui-icon material-icons">search</i></a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '刷新', position: 'auto'}" id="refresh"><i class="mdui-icon material-icons">refresh</i></a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '更多', position: 'auto'}" mdui-menu="{target: '#popupdialog'}" id="more"><i class="mdui-icon material-icons">more_vert</i></a>
 
-  </div>
-  
-  <div class="mdui-tab mdui-color-light-blue-a700" mdui-tab>
-    <a href="#tab1" class="mdui-ripple mdui-ripple-white">开发</a>
-    <a href="#tab2" class="mdui-ripple mdui-ripple-white">教程</a>
-    <a href="#tab3" class="mdui-ripple mdui-ripple-white">插件</a>
-  </div>
-  <div id="example1-tab1" class="mdui-p-a-2">web content</div>
-<div id="example1-tab2" class="mdui-p-a-2">shopping content</div>
-<div id="example1-tab3" class="mdui-p-a-2">shopping content</div>
-</div>
+		<ul class="mdui-menu" id="popupdialog">
+		  <li class="mdui-menu-item">
+			<a href="//shang.qq.com/wpa/qunwpa?idkey=6114e39a353bd240986e84e4928bccde4df8c4748ae7b3a734ee720b31ed8474" class="mdui-ripple" id="joinGroup1">插件开发学习群</a>
+		  </li>
+		  <li class="mdui-divider"></li>
+		  <li class="mdui-menu-item">
+			<a href="//shang.qq.com/wpa/qunwpa?idkey=6a55586b201b4fbe6e2abdba819e9904f7180e1d5d638c2f15860ebc7ce116c3" class="mdui-ripple" id="joinGroup2">KPA助手官方群</a>
+		  </li>
+		</ul>
 
-<div class="mdui-container">
+	  </div>
 
-<div class="mdui-drawer" id="left-drawer">
-  <ul class="mdui-list">
-    <li class="mdui-list-item mdui-ripple">      <i class="mdui-list-item-icon mdui-icon material-icons">move_to_inbox</i>
-      <div class="mdui-list-item-content">Inbox</div>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <i class="mdui-list-item-icon mdui-icon material-icons">star</i>
-      <div class="mdui-list-item-content">Starred</div>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
-      <div class="mdui-list-item-content">Sent mail</div>
-    </li>    <li class="mdui-list-item mdui-ripple">
-      <i class="mdui-list-item-icon mdui-icon material-icons">drafts</i>
-      <div class="mdui-list-item-content">Drafts</div>
-    </li>
-    <li class="mdui-subheader">Subheader</li>
-    <li class="mdui-list-item mdui-ripple">
-      <i class="mdui-list-item-icon mdui-icon material-icons">email</i>
-      <div class="mdui-list-item-content">All mail</div>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <i class="mdui-list-item-icon mdui-icon material-icons">delete</i>
-      <div class="mdui-list-item-content">Trash</div>
-    </li>
-    <li class="mdui-list-item mdui-ripple">
-      <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
-      <div class="mdui-list-item-content">Spam</div>
-    </li>
-  </ul>
-</div>
-  
-  <div class="mdui-fab-wrapper" mdui-fab="">
-      <button class="mdui-fab mdui-ripple mdui-color-light-blue-a700">
-        <i class="mdui-icon material-icons">add</i>
-        <i class="mdui-icon mdui-fab-opened material-icons">close</i>
-      </button>
-      <div class="mdui-fab-dial" style="height: 0px;">
-        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-light-blue-a700" style="transition-delay: 0ms;" mdui-tooltip="{content: '打印', position: 'left'}" mdui-dialog="{target: '#example'}"><i class="mdui-icon material-icons">backup</i></button>
-        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-light-blue-a700" style="transition-delay: 15ms;" mdui-tooltip="{content: '打印', position: 'left'}"><i class="mdui-icon material-icons">bookmark</i></button>
-        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-light-blue-a700" style="transition-delay: 30ms;" mdui-tooltip="{content: '打印', position: 'left'}"><i class="mdui-icon material-icons">access_alarms</i></button>
-        <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-light-blue-a700" style="transition-delay: 45ms;" mdui-tooltip="{content: '打印', position: 'left'}"><i class="mdui-icon material-icons">touch_app</i></button>
-      </div>
-    </div>
+	  <div class="mdui-tab mdui-color-light-blue-a700 mdui-tab-full-width" mdui-tab>
+		<a href="#tabbar_button_1" class="mdui-ripple mdui-ripple-white">插件开发</a>
+		<a href="#tabbar_button_2" class="mdui-ripple mdui-ripple-white">助手教程</a>
+		<a href="#tabbar_button_3" class="mdui-ripple mdui-ripple-white">插件仓库</a>
+	  </div>
+	</div>
+	<div id="tabbar_button_1" class="mdui-p-a-2">
+	  <div class="mdui-card mdui-hoverable">
+		<div class="mdui-card-header">
+		  <img class="mdui-card-header-avatar" src="/images/formatfa.jpg"/>
+		  <div class="mdui-card-header-title">格式化法</div>
+		  <div class="mdui-card-header-subtitle">FormatFa</div>
+		</div>
+		<div class="mdui-card-media">
+		  <img src="/images/kpa.jpg"/>
+		  <div class="mdui-card-menu">
+			<button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+		  </div>
+		</div>
+		<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+		<div class="mdui-card-actions">
+		  <button class="mdui-btn mdui-btn-icon mdui-float-left"><i class="mdui-icon material-icons mdui-text-color-pink">thumb_up</i></button>
+		  <button class="mdui-btn mdui-btn-icon mdui-float"><i class="mdui-icon material-icons mdui-text-color-light-blue">star_border</i></button>
+		  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">visibility_off</i></button>
+		</div>
 
-  <div class="mdui-dialog" id="example">
-    <div class="mdui-dialog-title">Are you sure?</div>
-    <div class="mdui-dialog-content">You'll lose all photos and media!</div>
-    <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-ripple" mdui-dialog-close>cancel</button>
-      <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>erase</button>
-    </div>
-  </div>
-</div>
-<div class="doc-example-demo">
-  <button class="mdui-btn mdui-color-theme-accent mdui-ripple" id="example-basic">Snackbar</button>
-</div>
-</div>
-<script src="/js/mdui.min.js"></script>
-<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/smooth-scroll-11.1.0/smooth-scroll.min.js"></script>
-<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/holder-2.9.4/holder.min.js"></script>
-<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/highlight-9.12.0/highlight.pack.js"></script>
-<script src="//mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js?v=0.4.0"></script>
-<script>var $$ = mdui.JQ;</script>
-<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/docs/js/docs.js?v=20170815"></script>
+	  </div>
+	</div>
+
+	<div id="tabbar_button_2" class="mdui-p-a-2">
+	  <div class="mdui-fab-wrapper" id="fab_button_1">
+		<button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" mdui-tooltip="{content: '编辑', position: 'left'}">
+		  <i class="mdui-icon material-icons">create</i>
+		</button>
+	  </div>
+	</div>
+	<div id="tabbar_button_3" class="mdui-p-a-2">
+	  <div class="mdui-fab-wrapper" id="fab_button_2">
+		<button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" mdui-tooltip="{content: '下载', position: 'left'}">
+		  <i class="mdui-icon material-icons">cloud_download</i>
+		</button>
+	  </div>
+	</div>
+
+	<script src="/js/mdui.min.js"></script>
 <script>
-  $$('#example-basic').on('click', function () {
-    mdui.snackbar({
-      message: '提示'
-    });
-  });
+
+mdui.JQ('#fab_button_1').on('click', function() {
+								var snackbar = new mdui.snackbar({
+																	 message: '正在建设...',
+																	 timeout: 2000,
+																	 position: 'bottom',
+																	 //buttonText: '我知道了',
+																	 buttonColor: '#ffffff',
+																	 closeOnButtonClick: true,
+																	 closeOnOutsideClick: true,
+																	 onClick: function() {
+																		 snackbar.close();
+																	 },
+																	 onButtonClick: function() {
+
+																	 }
+																 });
+							});
+							
+mdui.JQ('#fab_button_2').on('click', function() {
+								var snackbar = new mdui.snackbar({
+																	 message: '正在建设...',
+																	 timeout: 2000,
+																	 position: 'bottom',
+																	 //buttonText: '我知道了',
+																	 buttonColor: '#ffffff',
+																	 closeOnButtonClick: true,
+																	 closeOnOutsideClick: true,
+																	 onClick: function() {
+																		 snackbar.close();
+																	 },
+																	 onButtonClick: function() {
+
+																	 }
+																 });
+							});
+							
+mdui.JQ('#menu').on('click', function() {
+								var snackbar = new mdui.snackbar({
+																	 message: '正在建设...',
+																	 timeout: 2000,
+																	 position: 'bottom',
+																	 //buttonText: '我知道了',
+																	 buttonColor: '#ffffff',
+																	 closeOnButtonClick: true,
+																	 closeOnOutsideClick: true,
+																	 onClick: function() {
+																		 snackbar.close();
+																	 },
+																	 onButtonClick: function() {
+
+																	 }
+																 });
+							});
+							
+							mdui.JQ('#search').on('click', function() {
+								var snackbar = new mdui.snackbar({
+																	 message: '正在建设...',
+																	 timeout: 2000,
+																	 position: 'bottom',
+																	 //buttonText: '我知道了',
+																	 buttonColor: '#ffffff',
+																	 closeOnButtonClick: true,
+																	 closeOnOutsideClick: true,
+																	 onClick: function() {
+																		 snackbar.close();
+																	 },
+																	 onButtonClick: function() {
+
+																	 }
+																 });
+							});
+							
+							mdui.JQ('#refresh').on('click', function() {
+								window.location.reload();
+							});
+							
+var dialog = new mdui.dialog({
+								 modal: true,
+								 history: false,
+								 title: '提示',
+								 content: '正在建设...',
+								 buttons: [
+									 {
+										 text: '我知道了',
+										 close: false,
+										 onClick: function(inst) {
+											 dialog.close();
+										 }
+									 },
+								 ]
+							 });
+
 </script>
-<style></style>
-</body>
+  </body>
 </html>
