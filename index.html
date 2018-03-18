@@ -40,14 +40,12 @@
     <li class="mdui-list-item mdui-ripple">
       <i class="mdui-list-item-icon mdui-icon material-icons">move_to_inbox</i>
       <div class="mdui-list-item-content">Inbox</div>
-
     </li>
     <li class="mdui-list-item mdui-ripple">
       <i class="mdui-list-item-icon mdui-icon material-icons">star</i>
       <div class="mdui-list-item-content">Starred</div>
     </li>
     <li class="mdui-list-item mdui-ripple">
-
       <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
       <div class="mdui-list-item-content">Sent mail</div>
     </li>
@@ -93,20 +91,24 @@
     </div>
   </div>
 </div>
-  
-  <button class="mdui-btn mdui-color-theme-accent" id="open">open</button>
-  
+<div class="doc-example-demo">
+  <button class="mdui-btn mdui-color-theme-accent mdui-ripple" id="example-basic">open</button>
 </div>
-  
+</div>
 <script src="/js/mdui.min.js"></script>
-<style></style>
+<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/smooth-scroll-11.1.0/smooth-scroll.min.js"></script>
+<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/holder-2.9.4/holder.min.js"></script>
+<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/highlight-9.12.0/highlight.pack.js"></script>
+<script src="//mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js?v=0.4.0"></script>
+<script>var $$ = mdui.JQ;</script>
+<script src="//mdui-aliyun.cdn.w3cbus.com/docs/assets/docs/js/docs.js?v=20170815"></script>
 <script>
-var $$ = mdui.JQ;
-$$('#open').on('click', function () {
-  mdui.snackbar({
-    message: 'Message sent'
+  $$('#example-basic').on('click', function () {
+    mdui.snackbar({
+      message: '提示'
+    });
   });
-});
 </script>
+<style></style>
 </body>
 </html>
