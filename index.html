@@ -7,17 +7,15 @@
 <link rel="stylesheet" href="/css/mdui.min.css"/>
 </head>
 <body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
-<div class="mdui-dialog" id="example-1">
-<div class="mdui-dialog-title">Holle World</div>
-<div class="mdui-dialog-content">你好，世界！</div>
-<div class="mdui-dialog-actions">
-<button class="mdui-btn mdui-ripple" mdui-dialog-close>取消</button>
-<button class="mdui-btn mdui-ripple" mdui-dialog-confirm>确定</button>
-<button class="mdui-btn mdui-ripple" mdui-dialog-confirm>哈哈</button>
-</div>
+<div class="mdui-dialog">
+  <div class="mdui-dialog-title">Are you sure?</div>
+  <div class="mdui-dialog-content">You'll lose all photos and media!</div>
+  <div class="mdui-dialog-actions">
+    <button class="mdui-btn mdui-ripple">cancel</button>
+    <button class="mdui-btn mdui-ripple">erase</button>
+  </div>
 </div>
 <script src="/js/mdui.min.js">
-mdui-dialog="{target: '#example-1'}
 </script>
 </body>
 </html>
