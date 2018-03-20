@@ -13,20 +13,20 @@
 
 	<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
 	  <div class="mdui-toolbar mdui-color-light-blue-a700 ">
-		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer',swipe: true}" mdui-tooltip="{content: '菜单', position: 'auto'}" id="menu"><i class="mdui-icon material-icons">menu</i></a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer',swipe: true}" mdui-tooltip="{content: '菜单', position: 'auto'}" id="menu"><i class="mdui-icon material-icons">menu</i></a>
 		<a href="javascript:;" class="mdui-typo-title">帮助</a>
 		<div class="mdui-toolbar-spacer"></div>
-		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '搜索', position: 'auto'}" id="search"><i class="mdui-icon material-icons">search</i></a>
-		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '刷新', position: 'auto'}" id="refresh"><i class="mdui-icon material-icons">refresh</i></a>
-		<a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '更多', position: 'auto'}" mdui-menu="{target: '#popupdialog'}" id="more"><i class="mdui-icon material-icons">more_vert</i></a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '搜索', position: 'auto'}" id="search"><i class="mdui-icon material-icons">search</i></a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '刷新', position: 'auto'}" id="refresh"><i class="mdui-icon material-icons">refresh</i></a>
+		<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '更多', position: 'auto'}" mdui-menu="{target: '#popupdialog'}" id="more"><i class="mdui-icon material-icons">more_vert</i></a>
 
 		<ul class="mdui-menu" id="popupdialog">
-		  <li class="mdui-menu-item">
-			<a href="//shang.qq.com/wpa/qunwpa?idkey=6114e39a353bd240986e84e4928bccde4df8c4748ae7b3a734ee720b31ed8474" class="mdui-ripple" id="joinGroup1">插件开发学习群</a>
+		  <li class="mdui-menu-item mdui-ripple">
+			<a href="//shang.qq.com/wpa/qunwpa?idkey=6114e39a353bd240986e84e4928bccde4df8c4748ae7b3a734ee720b31ed8474" id="joinGroup1">插件开发学习群</a>
 		  </li>
 		  <li class="mdui-divider"></li>
-		  <li class="mdui-menu-item">
-			<a href="//shang.qq.com/wpa/qunwpa?idkey=6a55586b201b4fbe6e2abdba819e9904f7180e1d5d638c2f15860ebc7ce116c3" class="mdui-ripple" id="joinGroup2">KPA助手官方群</a>
+		  <li class="mdui-menu-item mdui-ripple">
+			<a href="//shang.qq.com/wpa/qunwpa?idkey=6a55586b201b4fbe6e2abdba819e9904f7180e1d5d638c2f15860ebc7ce116c3" id="joinGroup2">KPA助手官方群</a>
 		  </li>
 		</ul>
 
@@ -38,22 +38,35 @@
 	  </div>
 	</div>
 
+	<div class="mdui-fab-wrapper mdui-bottom-nav-scroll-hide" style="position: absolute;top:10; right:55; z-index: 2;" id="back-to-top">
+	  <a href="javascript:scroll(0,0)">
+		<div class="mdui-chip">
+		  <span class="mdui-chip-icon mdui-btn-raised mdui-ripple mdui-color-light-blue-a700 mdui-ripple"><i class="mdui-icon material-icons">expand_less</i></span>
+		  <span class="mdui-chip-title mdui-text-color-black-secondary mdui-ripple">返回顶部</span>
+		</div>
+	  </a>
+	</div>
+
 	<div id="tabbar_button_1" class="mdui-p-a-2">
+<style>
+.demo-card-wide {
+  width: 100%;
+}
+.mdl-card__bg {
+  color: #fff;
+  height: 176px;
+  background-color: #2196f3;
+}
+.card__bg_1 {
+ background: url('../images/kpa.jpg') center / cover;
+}
+</style>
 
-	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
-		<div class="mdl-card__title">
-		  <h2 class="mdl-card__title-text">哈哈</h2>
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
+		<div class="mdl-card__title mdl-card__bg card__bg_1">
+		  <h2 class="mdl-card__title-text">一二三四五六七八九十一二三四五六七八九十</h2>
 		</div>
-		<div class="mdl-card__supporting-text mdui-text-color-black">
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		</div>
+		<div class="mdl-card__supporting-text mdui-text-color-black">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-actions">
 			<button class="mdui-btn mdui-btn-icon mdui-float-left"><i class="mdui-icon material-icons mdui-text-color-pink">thumb_up</i></button>
@@ -64,20 +77,11 @@
 	  </div>
 
 	  <br>
-	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
-		<div class="mdl-card__title">
-		  <h2 class="mdl-card__title-text">哈哈</h2>
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
+		<div class="mdl-card__title mdl-card__bg">
+		  <h2 class="mdl-card__title-text">一二三四五六七八九十一二三四五六七八九十</h2>
 		</div>
-		<div class="mdl-card__supporting-text mdui-text-color-black">
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		</div>
+		<div class="mdl-card__supporting-text mdui-text-color-black">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-actions">
 			<button class="mdui-btn mdui-btn-icon mdui-float-left"><i class="mdui-icon material-icons mdui-text-color-pink">thumb_up</i></button>
@@ -88,20 +92,11 @@
 	  </div>
 
 	  <br>
-	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
-		<div class="mdl-card__title">
-		  <h2 class="mdl-card__title-text">哈哈</h2>
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
+		<div class="mdl-card__title mdl-card__bg">
+		  <h2 class="mdl-card__title-text">一二三四五六七八九十一二三四五六七八九十</h2>
 		</div>
-		<div class="mdl-card__supporting-text mdui-text-color-black">
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		</div>
+		<div class="mdl-card__supporting-text mdui-text-color-black">一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-actions">
 			<button class="mdui-btn mdui-btn-icon mdui-float-left"><i class="mdui-icon material-icons mdui-text-color-pink">thumb_up</i></button>
@@ -111,10 +106,8 @@
 		</div>
 	  </div>
 
-
-
-	  <div class="mdui-fab-wrapper" id="fab_button_1">
-		<button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" mdui-tooltip="{content: '添加教程', position: 'left'}">
+	  <div class="mdui-fab-wrapper mdui-bottom-nav-scroll-hide" id="fab_button_1">
+		<button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" mdui-tooltip="{content: '添加', position: 'left'}">
 		  <i class="mdui-icon material-icons">create</i>
 		</button>
 	  </div>
@@ -122,15 +115,12 @@
 
 	<div id="tabbar_button_2" class="mdui-p-a-2">
 
-
-	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
 		<div class="mdl-card__title">
-		  <i class="mdui-icon material-icons mdui-text-color-black-secondary">extension</i>
-		  <h2 class="mdl-card__title-text mdui-text-color-black-secondary">插件1</h2>
+		  <i class="mdui-icon material-icons mdui-text-color-light-blue">extension</i>
+		  <h2 class="mdl-card__title-text mdui-text-color-light-blue">插件1</h2>
 		</div>
-		<div class="mdl-card__supporting-text">
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		</div>
+		<div class="mdl-card__supporting-text">一二三四五六七八九十一二三四五六七八九十</div>
 
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header">
@@ -147,14 +137,12 @@
 	  </div>
 
 	  <br>
-	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
 		<div class="mdl-card__title">
-		  <i class="mdui-icon material-icons mdui-text-color-black-secondary">extension</i>
-		  <h2 class="mdl-card__title-text mdui-text-color-black-secondary">插件2</h2>
+		  <i class="mdui-icon material-icons mdui-text-color-light-blue">extension</i>
+		  <h2 class="mdl-card__title-text mdui-text-color-light-blue">插件2</h2>
 		</div>
-		<div class="mdl-card__supporting-text">
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		</div>
+		<div class="mdl-card__supporting-text">一二三四五六七八九十一二三四五六七八九十</div>
 
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header">
@@ -171,14 +159,12 @@
 	  </div>
 
 	  <br>
-	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
 		<div class="mdl-card__title">
-		  <i class="mdui-icon material-icons mdui-text-color-black-secondary">extension</i>
-		  <h2 class="mdl-card__title-text mdui-text-color-black-secondary">插件3</h2>
+		  <i class="mdui-icon material-icons mdui-text-color-light-blue">extension</i>
+		  <h2 class="mdl-card__title-text mdui-text-color-light-blue">插件3</h2>
 		</div>
-		<div class="mdl-card__supporting-text">
-		  子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」
-		</div>
+		<div class="mdl-card__supporting-text">一二三四五六七八九十一二三四五六七八九十</div>
 
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header">
@@ -196,8 +182,8 @@
 
 
 
-	  <div class="mdui-fab-wrapper" id="fab_button_2">
-		<button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" mdui-tooltip="{content: '上传插件', position: 'left'}">
+	  <div class="mdui-fab-wrapper mdui-bottom-nav-scroll-hide" id="fab_button_2">
+		<button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" mdui-tooltip="{content: '上传', position: 'left'}">
 		  <i class="mdui-icon material-icons">file_upload</i>
 		</button>
 	  </div>
@@ -206,6 +192,7 @@
 	<script src="/js/mdui.min.js"></script>
 	<script src="js/material.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+
 <script>
 
 mdui.JQ('#fab_button_1').on('click', function() {
@@ -313,19 +300,19 @@ var dialog = new mdui.dialog({
 			<h5 class="white-text">友情链接</h5>
 			<ul>
 			  <a class="grey-text text-lighten-3" href="http://www.baidu.com">
-				<div class="mdui-chip mdui-color-blue-700">
+				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
 				  <span class="mdui-chip-icon mdui-color-light-blue-900">A</span>
 				  <span class="mdui-chip-title">Apktool+助手</span>
 				</div>
 			  </a>
 			  <a class="grey-text text-lighten-3" href="http://www.baidu.com">
-				<div class="mdui-chip mdui-color-blue-700">
+				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
 				  <span class="mdui-chip-icon mdui-color-light-blue-900">B</span>
 				  <span class="mdui-chip-title">loading...</span>
 				</div>
 			  </a>
 			  <a class="grey-text text-lighten-3" href="http://www.baidu.com">
-				<div class="mdui-chip mdui-color-blue-700">
+				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
 				  <span class="mdui-chip-icon mdui-color-light-blue-900">C</span>
 				  <span class="mdui-chip-title">loading...</span>
 				</div>
@@ -335,8 +322,9 @@ var dialog = new mdui.dialog({
 		</div>
 	  </div>
 	  <div class="footer-copyright">
-		<div class="container">©1999-2018 Copyright DOFS All rights reserved.</div>
+		<div class="container mdui-ripple">©1999-2018 Copyright DOFS All rights reserved.</div>
 	  </div>
 	</footer>
+
   </body>
 </html>
