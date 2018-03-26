@@ -851,7 +851,7 @@ function joinQQ(qq) {
 	window.location.href = 'mqqwpa://im/chat?chat_type=wpa&uin=' + qq;
 };
 function showDialog(message) {
-	var dialog = new mdui.dialog({
+	new mdui.dialog({
 									 content: message,
 									 buttons: [
 										 {
@@ -861,26 +861,18 @@ function showDialog(message) {
 								 });
 };
 function showDialogs(title, message, button1, button2) {
-	var dialog = new mdui.dialog({
-									 modal: true,
-									 history: false,
+	new mdui.dialog({
 									 title: title,
 									 content: message,
 									 buttons: [
 										 {
 											 text: button1,
-											 close: false,
 											 onClick: function(inst) {
-												 dialog.close();
-
 											 }
 										 },
 										 {
 											 text: button2,
-											 close: false,
 											 onClick: function(inst) {
-												 dialog.close();
-
 											 }
 										 },
 									 ]
