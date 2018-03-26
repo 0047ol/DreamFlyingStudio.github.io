@@ -94,7 +94,7 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 		  <div class="mdui-card-primary-subtitle mdui-text-color-white">如果你有相关教程请点击右面的＋号哦～</div>
 		</div>
 		<div class="mdl-card__actions mdl-card--border">
-		  <button class="mdui-btn mdui-btn-icon mdui-text-color-white" style="position: absolute;top:120;right:20;width: 40px; height: 40px;" mdui-tooltip="{content: '投稿教程', position: 'auto'}" onclick="javascript:mdui.dialog({title:'是否继续？',content:'你是否要投稿助手教程？',buttons:[{text:'取消'},{text:'我要投稿',onClick: function(inst) {joinQQ(3489730632);}},]});"><i class="mdui-icon material-icons mdui-text-color-blue"><font size="6.5">loupe</font></i></button>
+		  <button class="mdui-btn mdui-btn-icon mdui-text-color-white" style="position: absolute;top:120;right:20;width: 40px; height: 40px;" mdui-tooltip="{content: '投稿教程', position: 'auto'}" onclick="javascript:showDialogs('是否继续？','你是否要投稿助手教程？','我要投稿');"><i class="mdui-icon material-icons mdui-text-color-blue"><font size="6.5">loupe</font></i></button>
 		  <div class="mdl-card__supporting-text mdui-text-color-black"><font size="4" color="black">【投稿要求】</font><br><br>1.建议使用文本和图片的内容格式；<br/>2.仅支持投稿不违规和谐的教程资料；<br/>3.请不要投稿破解类关于助手植入的操作；<br/>4.教程不建议使用视频格式，大小限制在1000MB以内；</div>
 		  <div class="mdui-card-menu">
 
@@ -1171,7 +1171,7 @@ function Base64() {
 				  <span class="mdui-chip-title">KPA助手官网2</span>
 				</div>
 			  </a>
-			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: '申请友链', position: 'auto'}" href="javascript:showDialogs('你要互相添加友情链接吗？<br>以更好的帮助支持你我的网站。','取消','继续');">
+			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: '申请友链', position: 'auto'}" href="javascript:showDialogs('确定？','你要互相添加友情链接吗？<br>以更好的帮助支持你我的网站。','继续');">
 				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
 				  <span class="mdui-chip-icon mdui-color-white"><i class="mdui-icon material-icons mdui-color-white">add</i>i></span>
 				  <span class="mdui-chip-title">申请友链</span>
