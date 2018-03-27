@@ -87,12 +87,19 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 
 	<div id="tabbar_button_1" class="mdui-p-a-2">
 
-	  <div class="mdui-card demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
+	  <div id="gonggaolan" class="mdui-card demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
 		<div class="mdui-card-primary" style="background-image:url('http://shp.qpic.cn/collector/3489730632/67928c68-75e9-476c-ae67-e0fc34f5bca5/0');">
 		  <span class="new badge white mdui-text-color-black" style="position: absolute;top:30;left:5;" data-badge-caption="公告"></span>
 		  <div class="mdui-card-primary-title mdui-text-color-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教程征集</div>
 		  <div class="mdui-card-primary-subtitle mdui-text-color-white">如果你有相关教程请点击右面的＋号哦～</div>
-		</div>
+		  <div class="mdl-card__menu">
+			<a href="javascript:var parent=document.getElementById('tabbar_button_1'); var child=document.getElementById('gonggaolan'); parent.removeChild(child);">
+			  <button mdui-tooltip="{content: '关闭', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				<i class="mdui-icon material-icons mdui-text-color-white">cancel</i>
+			  </button>
+			</a>
+		  </div>
+		  </div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" style="position: absolute;top:120;right:20" mdui-tooltip="{content: '投稿教程', position: 'auto'}" onclick="javascript:joinQQ(3489730632);"><i class="mdui-icon material-icons">edit</i></button>
 		  <div class="mdl-card__supporting-text mdui-text-color-black"><font size="4" color="black">【投稿要求】</font><br><br>1.建议使用文本和图片的内容格式；<br/>2.仅支持投稿不违规和谐的教程资料；<br/>3.请不要投稿破解类关于助手植入的操作；<br/>4.教程不建议使用视频格式，大小限制在1000MB以内；</div>
@@ -102,10 +109,17 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 	  </div>
 
 	  <br>
-	  <div class="mdui-card demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
+	  <div id="gengxinlan" class="mdui-card demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
 		<div class="mdui-card-media">
-		  <img style="width: -1; height: -2;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521821930340&di=0dd3674f365c7a13130a5c0c6e343f9e&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015e5d57c0aff10000012e7e9c1e84.gif"/>
-		  <div class="mdui-card-media-covered">
+		  <img style="width: -1; height: -2;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522142514569&di=98227cdc3039fb3f4570e83e636b5f1a&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ac4a56abbca96ac7256cb0f7935e.gif"/>
+		  <div class="mdl-card__menu">
+			<a href="javascript:var parent=document.getElementById('tabbar_button_1'); var child=document.getElementById('gengxinlan'); parent.removeChild(child);">
+			  <button mdui-tooltip="{content: '关闭', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				<i class="mdui-icon material-icons mdui-text-color-white">cancel</i>
+			  </button>
+			</a>
+		  </div>
+			<div class="mdui-card-media-covered">
 			<div class="mdui-card-primary">
 			  <div class="mdl-card__menu" style="position: absolute;top:30;right:15;">
 				<a href="https://raw.githubusercontent.com/apktoolhelper/apktoolhelper.github.io/master/KPA%E5%8A%A9%E6%89%8B1.7.9.apk">
@@ -129,7 +143,7 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 		</div>
 		<a id="url_one" href="http://www.baidu.com">
 		  <div class="mdui-card-media">
-			<img id="img_one" style="width: -1; height: -2;" src="http://shp.qpic.cn/collector/3489730632/67928c68-75e9-476c-ae67-e0fc34f5bca5/0"/>
+			<img id="img_one" style="width: -1; height: -2;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521821930340&di=0dd3674f365c7a13130a5c0c6e343f9e&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F015e5d57c0aff10000012e7e9c1e84.gif"/>
 			<div class="mdui-card-media-covered">
 			  <div class="mdui-card-primary">
 				<div id="title_one" class="mdui-card-primary-title">教程示例-标题</div>
@@ -147,6 +161,29 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
+		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">APKTool反编译插件</h2>
+		  <span class="new badge blue" data-badge-caption="v1.0"></span>
+		</div>
+		<div class="mdl-card__supporting-text">利用APKTOOL进行反编译APK回编译APK文件。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__actions mdl-card--border">
+		  <div class="mdui-card-header mdui-ripple">
+			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
+			<div class="mdui-card-header-title mdui-text-color-black-secondary" style="font-weight: 400;">作者：格式化法</div>
+			<div class="mdui-card-header-subtitle">QQ：1758759399</div>
+			<div class="mdl-card__menu">
+			  <a id="plugin_xfczrcj2" href="https://raw.githubusercontent.com/apktoolhelper/apktoolhelper.github.io/master/%E6%82%AC%E6%B5%AE%E7%AA%97%E6%A4%8D%E5%85%A5%E6%8F%92%E4%BB%B6(%E6%96%B0).zip">
+				<button mdui-tooltip="{content: '下载插件', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				  <i class="mdui-icon material-icons mdui-text-color-light-blue">file_download</i>
+				</button>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <br>
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
+		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">悬浮窗植入插件(新)</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
@@ -157,7 +194,7 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 			<div class="mdui-card-header-title mdui-text-color-black-secondary" style="font-weight: 400;">作者：格式化法</div>
 			<div class="mdui-card-header-subtitle">QQ：1758759399</div>
 			<div class="mdl-card__menu">
-			  <a id="plugin_xfczrcj" href="https://raw.githubusercontent.com/apktoolhelper/apktoolhelper.github.io/master/%E6%82%AC%E6%B5%AE%E7%AA%97%E6%A4%8D%E5%85%A5%E6%8F%92%E4%BB%B6(%E6%96%B0).zip">
+			  <a id="plugin_xfczrcj2" href="https://raw.githubusercontent.com/apktoolhelper/apktoolhelper.github.io/master/%E6%82%AC%E6%B5%AE%E7%AA%97%E6%A4%8D%E5%85%A5%E6%8F%92%E4%BB%B6(%E6%96%B0).zip">
 				<button mdui-tooltip="{content: '下载插件', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 				  <i class="mdui-icon material-icons mdui-text-color-light-blue">file_download</i>
 				</button>
@@ -676,10 +713,33 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 	  <br>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
+		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">格格加固插件(新)</h2>
+		  <span class="new badge blue" data-badge-caption="v1.1"></span>
+		</div>
+		<div class="mdl-card__supporting-text">用来给Apk加固的一款插件。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__actions mdl-card--border">
+		  <div class="mdui-card-header mdui-ripple">
+			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
+			<div class="mdui-card-header-title mdui-text-color-black-secondary" style="font-weight: 400;">作者：格式化法</div>
+			<div class="mdui-card-header-subtitle">QQ：1758759399</div>
+			<div class="mdl-card__menu">
+			  <a id="plugin_xfczrcj" href="https://raw.githubusercontent.com/apktoolhelper/apktoolhelper.github.io/master/%E6%82%AC%E6%B5%AE%E7%AA%97%E6%A4%8D%E5%85%A5%E6%8F%92%E4%BB%B6(%E6%96%B0).zip">
+				<button mdui-tooltip="{content: '下载插件', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				  <i class="mdui-icon material-icons mdui-text-color-light-blue">file_download</i>
+				</button>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <br>
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
+		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">格格加固插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
-		<div class="mdl-card__supporting-text">用来给Apk加固的一款插件。</div>
+		<div class="mdl-card__supporting-text">用来给Apk加固的一款插件。<br>该插件仅适用于1.7.8及以下版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -745,6 +805,29 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 	  <br>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
+		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">DEX分解插件</h2>
+		  <span class="new badge blue" data-badge-caption="v1.0"></span>
+		</div>
+		<div class="mdl-card__supporting-text">将dex拆成多个dex。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__actions mdl-card--border">
+		  <div class="mdui-card-header mdui-ripple">
+			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
+			<div class="mdui-card-header-title mdui-text-color-black-secondary" style="font-weight: 400;">作者：格式化法</div>
+			<div class="mdui-card-header-subtitle">QQ：1758759399</div>
+			<div class="mdl-card__menu">
+			  <a id="plugin_xfczrcj" href="https://raw.githubusercontent.com/apktoolhelper/apktoolhelper.github.io/master/%E6%82%AC%E6%B5%AE%E7%AA%97%E6%A4%8D%E5%85%A5%E6%8F%92%E4%BB%B6(%E6%96%B0).zip">
+				<button mdui-tooltip="{content: '下载插件', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				  <i class="mdui-icon material-icons mdui-text-color-light-blue">file_download</i>
+				</button>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <br>
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
+		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">DEX合并插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
@@ -768,10 +851,33 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 	  <br>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
+		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">自定义签名插件(新)</h2>
+		  <span class="new badge blue" data-badge-caption="v1.1"></span>
+		</div>
+		<div class="mdl-card__supporting-text">可以给植入完后的APK安装包进行签名安装。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__actions mdl-card--border">
+		  <div class="mdui-card-header mdui-ripple">
+			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
+			<div class="mdui-card-header-title mdui-text-color-black-secondary" style="font-weight: 400;">作者：格式化法</div>
+			<div class="mdui-card-header-subtitle">QQ：1758759399</div>
+			<div class="mdl-card__menu">
+			  <a id="plugin_xfczrcj" href="https://raw.githubusercontent.com/apktoolhelper/apktoolhelper.github.io/master/%E6%82%AC%E6%B5%AE%E7%AA%97%E6%A4%8D%E5%85%A5%E6%8F%92%E4%BB%B6(%E6%96%B0).zip">
+				<button mdui-tooltip="{content: '下载插件', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				  <i class="mdui-icon material-icons mdui-text-color-light-blue">file_download</i>
+				</button>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <br>
+	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
+		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">自定义签名插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.1"></span>
 		</div>
-		<div class="mdl-card__supporting-text">可以给植入完后的APK安装包进行签名安装。</div>
+		<div class="mdl-card__supporting-text">可以给植入完后的APK安装包进行签名安装。<br>该插件仅适用于1.7.8及以下版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
