@@ -23,7 +23,7 @@
   </div>
   </section>
   <script>
-    var menuHidden=false;document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){document.getElementById("toggleMenuBtn").addEventListener("click",function(a){if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"}else{WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"}},false);document.getElementById("toggleToolbar").addEventListener("click",function(a){if(!toolbarHidden){WeixinJSBridge.call("hideToolbar");toolbarHidden=true;this.value="显示底部导航栏"}else{WeixinJSBridge.call("showToolbar");toolbarHidden=false;this.value="隐藏底部导航栏"}},false);document.getElementById("getNetType").addEventListener("click",function(a){WeixinJSBridge.invoke("getNetworkType",{},function(b){alert(netType[b.err_msg])})},false)});
+    window.onload=function(){var menuHidden=false;document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){document.getElementById("toggleMenuBtn").addEventListener("click",function(a){if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"}else{WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"}},false);}
   </script>
   </body>
 </html>
