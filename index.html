@@ -23,7 +23,7 @@
   </div>
   </section>
   <script>
-    window.onload=function(){var menuHidden=false;document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){document.getElementById("toggleMenuBtn").addEventListener("click",function(a){if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"}else{WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"}},false);}
+    window.onload=function(){var menuHidden=false;document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"}else{WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"},false);}
   </script>
   </body>
 </html>
