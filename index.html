@@ -17,7 +17,8 @@
 <link rel=stylesheet href="//www.baidufe.com/fe/base/static/css/base/base.css?v=00258e4e"><![endif]-->
     <!--[if (!IE)|(gte IE 8.0)]><!-->
     <link href="//www.baidufe.com/fe/base/static/css/base/base_datauri.css?v=10e21e48" rel="stylesheet">
-    <!--<![endif]--><link href="//www.baidufe.com/fe/blog/static/css/webapp/base.css?v=96d3ddc2" rel="stylesheet">
+    <!--<![endif]-->
+    <link href="//www.baidufe.com/fe/blog/static/css/webapp/base.css?v=96d3ddc2" rel="stylesheet">
     <style type="text/css">.mod-weixinjsapi{padding:10px}.mod-weixinjsapi .tips{color:#b00;font-size:20px}.mod-weixinjsapi .x-desc{color:#666;font-size:16px;padding:10px 0}#toggleMenuBtn,#toggleToolbar,#getNetType{display:block;height:30px;margin:20px 0}</style><script type="text/javascript">(function(){var a=document.getElementsByTagName("html")[0];window.Session={appDomain:a.getAttribute("data-app-domain")||"",staticDomain:a.getAttribute("data-static-domain")||""}})();window.registNS=function(fullNS,isIgnorSelf){var reg=/^[_$a-z]+[_$a-z0-9]*/i;var nsArray=fullNS.split(".");var sEval="";var sNS="";var n=isIgnorSelf?nsArray.length-1:nsArray.length;for(var i=0;i<n;i++){if(!reg.test(nsArray[i])){throw new Error("Invalid namespace:"+nsArray[i]+"");return}if(i!=0){sNS+="."}sNS+=nsArray[i];sEval+="if(typeof("+sNS+")=='undefined') "+sNS+"=new Object();else "+sNS+";"}if(sEval!=""){return eval(sEval)}return{}};window.addEventMap=function(c,d,b,a){$.each(d,function(e,f){$(c).bind(f,function(h){var g=h.target||h.srcElement;if(!g){return false}for(var j in b[f]){var i=b[f][j];if((g.className&&$(g).hasClass(j))){i.call(g,h);break}else{if(ancestor=$(g).parents("."+j)[0]){i.call(ancestor,h);break}}}if(typeof a==="function"){a.call(h)}})})};var fixedTheElementOnScroll=function(c,a){if(!c){return false}a=parseInt(a,10)||0;var b=function(g){var f=$(c).offset();if($(c).attr("data-fixed")!="1"){$(c).attr({"data-original-top":f.top})}var d=$(window).scrollTop()+a;if($(c).attr("data-original-top")<=d){if($.browser.ie==6){$(c).attr({"data-fixed":1});$(c).css({position:"absolute",top:d-$(c).attr("data-original-top")+c.offsetHeight,left:0})}else{if($(c).attr("data-fixed")!="1"){$(c).attr({"data-fixed":1});$(c).css({position:"fixed",top:a,left:f.left})}}}else{$(c).attr("data-fixed",0);$(c).css({position:"static"})}};b();$(window).scroll(b)};String.prototype.trim=function(){return this.replace(/^\s*|\s*$/g,"")};String.format=function(c,a){c=String(c);var b=Array.prototype.slice.call(arguments,1),d=Object.prototype.toString;if(b.length){b=b.length==1?(a!==null&&(/\[object Array\]|\[object Object\]/.test(d.call(a)))?a:b):b;return c.replace(/#\{(.+?)\}/g,function(e,g){var f=b[g];if("[object Function]"==d.call(f)){f=f(g)}return("undefined"==typeof f?"":f)})}return c};(function(){var b=("abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video").split(","),a=b.length;while(a--){document.createElement(b[a])}})();</script>
   </head>
   <body>
@@ -26,8 +27,6 @@
   </div>
   <div class="mod-pagecontent">
   <div class="mod-weixinjsapi">
-    <h3 class="tips">Tips：本页面只在微信中打开有效！</h3>
-    <div class="x-desc">微信客户端自带的Js Api：WeixinJSBridge，本例子主要演示隐藏或显示右上角按钮、隐藏或显示底部导航栏，获取网络状态</div>
     <div id="WeixinJsApi">
       <input id="toggleMenuBtn" type="button" value="隐藏右上角按钮">
       <input id="toggleToolbar" type="button" value="隐藏底部导航栏">
@@ -37,7 +36,15 @@
   </div>
   </div>
   </section>
-  <script>var menuHidden=false;var toolbarHidden=false;var netType={"network_type:wifi":"wifi网络","network_type:edge":"非wifi,包含3G/2G","network_type:fail":"网络断开连接","network_type:wwan":"2g或者3g"};document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){document.getElementById("toggleMenuBtn").addEventListener("click",function(a){if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"}else{WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"}},false);document.getElementById("toggleToolbar").addEventListener("click",function(a){if(!toolbarHidden){WeixinJSBridge.call("hideToolbar");toolbarHidden=true;this.value="显示底部导航栏"}else{WeixinJSBridge.call("showToolbar");toolbarHidden=false;this.value="隐藏底部导航栏"}},false);document.getElementById("getNetType").addEventListener("click",function(a){WeixinJSBridge.invoke("getNetworkType",{},function(b){alert(netType[b.err_msg])})},false)});</script><div class="mod-footer"><div class="clearfix"></div><div class="footer-box">Copyright ©<a href="//www.baidufe.com/about" target="_blank">Alien</a>&nbsp;All Rights Reserved.&nbsp;<a class="x-beian" href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备14006329号</a></div></div><div class="hide"><script>(function(){var a=(("https:"==document.location.protocol)?" https://":" http://");document.write(unescape("%3Cscript src='"+a+"hm.baidu.com/h.js%3F17b02fba4e62901b4289eef4c2243123' type='text/javascript'%3E%3C/script%3E"))})();</script><script src=" https://hm.baidu.com/h.js?17b02fba4e62901b4289eef4c2243123" type="text/javascript">
+  <script>
+    var menuHidden=false;
+    var toolbarHidden=false;
+    var netType={"network_type:wifi":"wifi网络","network_type:edge":"非wifi,包含3G/2G","network_type:fail":"网络断开连接","network_type:wwan":"2g或者3g"};
+    document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){
+      document.getElementById("toggleMenuBtn").addEventListener("click",function(a){
+        if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"
+                       }else{
+                         WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"}},false);
   </script>
   </div>
   </body>
