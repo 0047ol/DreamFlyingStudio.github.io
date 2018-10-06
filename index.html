@@ -17,15 +17,13 @@
   <div class="mod-pagecontent">
   <div class="mod-weixinjsapi"><div id="WeixinJsApi">
   <input id="toggleMenuBtn" type="button" value="隐藏右上角按钮">
-  <input id="toggleToolbar" type="button" value="隐藏底部导航栏">
-  <input id="getNetType" type="button" value="获取网络状态">
   </div>
   </div>
   </div>
   </div>
   </section>
   <script>
-    var menuHidden=false;var toolbarHidden=false;var netType={"network_type:wifi":"wifi网络","network_type:edge":"非wifi,包含3G/2G","network_type:fail":"网络断开连接","network_type:wwan":"2g或者3g"};document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){document.getElementById("toggleMenuBtn").addEventListener("click",function(a){if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"}else{WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"}},false);document.getElementById("toggleToolbar").addEventListener("click",function(a){if(!toolbarHidden){WeixinJSBridge.call("hideToolbar");toolbarHidden=true;this.value="显示底部导航栏"}else{WeixinJSBridge.call("showToolbar");toolbarHidden=false;this.value="隐藏底部导航栏"}},false);document.getElementById("getNetType").addEventListener("click",function(a){WeixinJSBridge.invoke("getNetworkType",{},function(b){alert(netType[b.err_msg])})},false)});
+    var menuHidden=false;document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){document.getElementById("toggleMenuBtn").addEventListener("click",function(a){if(!menuHidden){WeixinJSBridge.call("hideOptionMenu");menuHidden=true;this.value="显示右上角按钮"}else{WeixinJSBridge.call("showOptionMenu");menuHidden=false;this.value="隐藏右上角按钮"}},false);document.getElementById("toggleToolbar").addEventListener("click",function(a){if(!toolbarHidden){WeixinJSBridge.call("hideToolbar");toolbarHidden=true;this.value="显示底部导航栏"}else{WeixinJSBridge.call("showToolbar");toolbarHidden=false;this.value="隐藏底部导航栏"}},false);document.getElementById("getNetType").addEventListener("click",function(a){WeixinJSBridge.invoke("getNetworkType",{},function(b){alert(netType[b.err_msg])})},false)});
   </script>
   </body>
 </html>
