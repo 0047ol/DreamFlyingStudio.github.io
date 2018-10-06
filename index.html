@@ -2159,7 +2159,8 @@
         </div>
         <br>
         <div class="weui-slider-box">
-            <div class="weui-slider">
+
+<div class="weui-slider">
                 <div id="sliderInner" class="weui-slider__inner">
                     <div id="sliderTrack" style="width: 50%;" class="weui-slider__track"></div>
                     <div id="sliderHandler" style="left: 50%;" class="weui-slider__handler"></div>
@@ -2181,7 +2182,6 @@
         var totalLen = $('#sliderInner').width(),
             startLeft = 0,
             startX = 0;
-
         $sliderHandler
             .on('touchstart', function (e) {
                 startLeft = parseInt($sliderHandler.css('left')) * totalLen / 100;
@@ -2195,7 +2195,6 @@
                 $sliderTrack.css('width', percent + '%');
                 $sliderHandler.css('left', percent + '%');
                 $sliderValue.text(percent);
-
                 e.preventDefault();
             })
         ;
@@ -2205,5 +2204,21 @@
     <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
     <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
     <script src="https://weui.io/example.js"></script>
+	<script>
+        function onBridgeReady() {
+            WeixinJSBridge.call('hideOptionMenu');
+        }
+
+        if (typeof WeixinJSBridge == "undefined") {
+            if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+            } else if (document.attachEvent) {
+                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+            }
+        } else {
+            onBridgeReady();
+        }
+    </script>
 </body>
 </html>
