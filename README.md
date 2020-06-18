@@ -256,4 +256,3 @@ Progresss.show();//显示弹窗```
 简化方法
 ```java
 QQProgress.showPorgressBar(MainActivity.this,"这是一个进度条",QQProgress.setTheme.DEFAULT).show();```
-------------
