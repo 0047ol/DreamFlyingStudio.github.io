@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-	<meta charset="UTF-8">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
-	<title>QQ Widget</title>
-	<link rel="stylesheet" href="https://i.gtimg.cn/vipstyle/frozenui/2.0.0/css/frozen.css"/>
-  </head>
-  <body ontouchstart>
-    <section class="ui-container">
-	  <section id="notice">
-		<div class="demo-block">
-		  <div class="ui-actionsheet" id="actionsheet">
-			<div class="ui-actionsheet-cnt am-actionsheet-down">
-			  <h4>Please choose</h4>
-			  <button id="btn1">jar</button>
-			  <button id="btn2">dex</button>
-		<button id="btn3">demo</button>
-			  <div class="ui-actionsheet-split-line"></div>
-			  <button id="actionsheet-cancel">Close</button>
-			</div>
-		  </div>
-		  <div class="ui-dialog" id="dialog">
-			<div class="ui-dialog-cnt">
-			  <div class="ui-dialog-bd">
-				<h3>Important Hints</h3>
-				<p>The source of this open source project is collected on the internet. Do not use it for commercial purposes. In case of lawsuit, infringement is not liable.</p>
-			  </div>
-			  <div class="ui-dialog-ft">
-				<button id="dialog-cancel" type="button" data-role="button">I Decline</button>
-				<button id="dialog-ok" type="button" data-role="button">I'm In Charge</button>
-			  </div>
-			</div>
-		  </div>
-		  <div id="ui-loading" class="ui-loading-block show">
-			<div class="ui-loading-cnt">
-			  <i class="ui-loading-bright"></i>
-			  <p>Loading...</p>
-			</div>
-		  </div>
-		  <section class="ui-notice ui-panel ui-panel-center ">
-			<div class="ui-notice-btn" >
-			  <button id="btn" class=" ui-btn-lg">Download</button>
-			</div>
-		  </section>
-		  <div class="ui-tooltips-footer-vip">
-            	<div class="ui-tooltips-cnt">
-            		<a href="https://0047ol.github.io/demo/README.md">tutorial</a>
-            	</div>
-            </div>
-		</div>
-	  </section>
-    </section>
-	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-<script type="text/javascript">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no" /> 
+  <title>QQ Widget</title> 
+  <link rel="stylesheet" href="https://i.gtimg.cn/vipstyle/frozenui/2.0.0/css/frozen.css" /> 
+ </head> 
+ <body ontouchstart=""> 
+  <section class="ui-container"> 
+   <section id="notice"> 
+    <div class="demo-block"> 
+     <div class="ui-actionsheet" id="actionsheet"> 
+      <div class="ui-actionsheet-cnt am-actionsheet-down"> 
+       <h4>Please choose</h4> 
+       <button id="btn1">jar file</button> 
+	   <button id="btn2">anim file</button>
+       <button id="btn3">dex file</button> 
+	   <button id="btn4">assets file</button>
+       <button id="btn5">tutorial project</button>
+	   <button id="btn6">demo application</button> 
+       <div class="ui-actionsheet-split-line"></div> 
+       <button id="actionsheet-cancel">Close</button> 
+      </div> 
+     </div> 
+     <div class="ui-dialog" id="dialog"> 
+      <div class="ui-dialog-cnt"> 
+       <div class="ui-dialog-bd"> 
+        <h3>Important Hints</h3> 
+        <p>The source of this open source project is collected on the internet. Do not use it for commercial purposes. In case of lawsuit, infringement is not liable.</p> 
+       </div> 
+       <div class="ui-dialog-ft"> 
+        <button id="dialog-cancel" type="button" data-role="button">I Decline</button> 
+        <button id="dialog-ok" type="button" data-role="button">I'm In Charge</button> 
+       </div> 
+      </div> 
+     </div> 
+     <div id="ui-loading" class="ui-loading-block show"> 
+      <div class="ui-loading-cnt"> 
+       <i class="ui-loading-bright"></i> 
+       <p>Loading...</p> 
+      </div> 
+     </div> 
+     <section class="ui-notice ui-panel ui-panel-center "> 
+      <div class="ui-notice-btn"> 
+       <button id="btn" class=" ui-btn-lg">Download</button> 
+      </div> 
+     </section> 
+     <div class="ui-tooltips-footer-vip"> 
+      <div class="ui-tooltips-cnt"> 
+       <a href="https://0047ol.github.io/demo/README.md">tutorial</a> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+  </section> 
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script> 
+  <script type="text/javascript">
 $("#ui-loading").removeClass("show");
 $("#btn").click(function() {
-					$("#ui-loading").addClass("show");
-					setTimeout("$('#ui-loading').removeClass('show');$('#dialog').addClass('show');", 300);
-				});
-				$("#dialog-cancel").click(function() {
-							  $("#dialog").removeClass("show");
-						  });
-						  $("#dialog-ok").click(function() {
-						  $("#dialog").removeClass("show");
-						  $("#ui-loading").addClass("show");
-						  setTimeout("$('#ui-loading').removeClass('show'); $('#actionsheet').addClass('show');", 1000);
-					  });
-					  $("#actionsheet-cancel").click(function() {
-								   $("#actionsheet").removeClass("show");
-							   });
-							   $("#btn1").click(function() {
-					 $("#actionsheet").removeClass("show");
-					 $('#ui-loading').addClass('show');
-					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='https://0047ol.github.io/demo/com.tencent.qq.widget.jar';", 1000);
-				 });
-				 $("#btn2").click(function() {
-					 $("#actionsheet").removeClass("show");
-					 $('#ui-loading').addClass('show');
-					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='https://0047ol.github.io/demo/com.tencent.qq.widget.dex';", 1000);
-				 });
-				 $("#btn3").click(function() {
-					 $("#actionsheet").removeClass("show");
-					 $('#ui-loading').addClass('show');
-					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='https://0047ol.github.io/demo/%E5%BC%80%E5%8F%91%E7%A4%BA%E4%BE%8B.zip';", 1000);
-				 });
-</script>
-  </body>
+    $("#ui-loading").addClass("show");
+    setTimeout("$('#ui-loading').removeClass('show');$('#dialog').addClass('show');", 300);
+});
+$("#dialog-cancel").click(function() {
+    $("#dialog").removeClass("show");
+});
+$("#dialog-ok").click(function() {
+    $("#dialog").removeClass("show");
+    $("#ui-loading").addClass("show");
+    setTimeout("$('#ui-loading').removeClass('show'); $('#actionsheet').addClass('show');", 1000);
+});
+$("#actionsheet-cancel").click(function() {
+    $("#actionsheet").removeClass("show");
+});
+$("#btn1").click(function() {
+    $("#actionsheet").removeClass("show");
+    $('#ui-loading').addClass('show');
+    setTimeout("$('#ui-loading').removeClass('show');window.location.href ='com.tencent.qq.widget.jar';", 1000);
+});
+$("#btn2").click(function() {
+    $("#actionsheet").removeClass("show");
+    $('#ui-loading').addClass('show');
+    setTimeout("$('#ui-loading').removeClass('show');window.location.href ='anim.zip';", 1000);
+});
+$("#btn3").click(function() {
+    $("#actionsheet").removeClass("show");
+    $('#ui-loading').addClass('show');
+    setTimeout("$('#ui-loading').removeClass('show');window.location.href ='com.tencent.qq.widget.dex';", 1000);
+});
+$("#btn4").click(function() {
+    $("#actionsheet").removeClass("show");
+    $('#ui-loading').addClass('show');
+    setTimeout("$('#ui-loading').removeClass('show');window.location.href ='assets.zip';", 1000);
+});
+$("#btn5").click(function() {
+    $("#actionsheet").removeClass("show");
+    $('#ui-loading').addClass('show');
+    setTimeout("$('#ui-loading').removeClass('show');window.location.href ='tutorial.zip';", 1000);
+});
+$("#btn6").click(function() {
+    $("#actionsheet").removeClass("show");
+    $('#ui-loading').addClass('show');
+    setTimeout("$('#ui-loading').removeClass('show');window.location.href ='demo.apk';", 1000);
+});
+</script>  
+ </body>
 </html>
