@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
-	<title>QQWidget For Java</title>
+	<title>QQ Widget</title>
 	<link rel="stylesheet" href="https://i.gtimg.cn/vipstyle/frozenui/2.0.0/css/frozen.css"/>
   </head>
   <body ontouchstart>
@@ -14,8 +14,8 @@
 		  <div class="ui-actionsheet" id="actionsheet">
 			<div class="ui-actionsheet-cnt am-actionsheet-down">
 			  <h4>Please choose</h4>
-			  <button id="btn1">download</button>
-			  <button id="btn2">BaiduYun</button>
+			  <button id="btn1">jar</button>
+			  <button id="btn2">dex</button>
 		<button id="btn3">demo</button>
 			  <div class="ui-actionsheet-split-line"></div>
 			  <button id="actionsheet-cancel">Close</button>
@@ -54,31 +54,31 @@ $("#btn").click(function() {
 					$("#ui-loading").addClass("show");
 					setTimeout("$('#ui-loading').removeClass('show');$('#dialog').addClass('show');", 300);
 				});
-$("#dialog-cancel").click(function() {
+				$("#dialog-cancel").click(function() {
 							  $("#dialog").removeClass("show");
 						  });
-$("#dialog-ok").click(function() {
+						  $("#dialog-ok").click(function() {
 						  $("#dialog").removeClass("show");
 						  $("#ui-loading").addClass("show");
 						  setTimeout("$('#ui-loading').removeClass('show'); $('#actionsheet').addClass('show');", 1000);
 					  });
-$("#actionsheet-cancel").click(function() {
+					  $("#actionsheet-cancel").click(function() {
 								   $("#actionsheet").removeClass("show");
 							   });
-$("#btn1").click(function() {
+							   $("#btn1").click(function() {
 					 $("#actionsheet").removeClass("show");
 					 $('#ui-loading').addClass('show');
-					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='https://raw.githubusercontent.com/DreamFlyingStudio/DreamFlyingStudio.github.io/master/com.tencent.qq.widget.jar';", 1000);
+					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='com.tencent.qq.widget.jar';", 1000);
 				 });
-$("#btn2").click(function() {
+				 $("#btn2").click(function() {
 					 $("#actionsheet").removeClass("show");
 					 $('#ui-loading').addClass('show');
-					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='https://pan.baidu.com/s/1JbQ6Oa6Wz-4MW9x7a8SH4g';", 1000);
+					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='com.tencent.qq.widget.dex'';", 1000);
 				 });
-	   $("#btn3").click(function() {
+				 $("#btn3").click(function() {
 					 $("#actionsheet").removeClass("show");
 					 $('#ui-loading').addClass('show');
-					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='https://raw.githubusercontent.com/DreamFlyingStudio/DreamFlyingStudio.github.io/master/%E5%BC%80%E5%8F%91%E7%A4%BA%E4%BE%8B.zip';", 1000);
+					 setTimeout("$('#ui-loading').removeClass('show');window.location.href ='%E5%BC%80%E5%8F%91%E7%A4%BA%E4%BE%8B.zip';", 1000);
 				 });
 </script>
   </body>
